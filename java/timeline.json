@@ -1,0 +1,28 @@
+{
+  "zelda_timeline": [
+    {
+      "id": "skyward",
+      "title": "Skyward Sword",
+      "era": "Era of the Sky",
+      "placement": "The Beginning",
+      "description": "The earliest story in the chronology. It depicts the forging of the Master Sword and the origins of the cycle of reincarnation.",
+      "key_event": "The Goddess Hylia's plan to defeat Demise."
+    },
+    {
+      "id": "ocarina",
+      "title": "Ocarina of Time",
+      "era": "Era of the Hero of Time",
+      "placement": "The Chronological Pivot",
+      "description": "The point where the timeline splits into three distinct paths based on the outcome of the battle with Ganondorf.",
+      "key_event": "Link pulls the Master Sword and travels 7 years into the future."
+    },
+    {
+      "id": "twilight",
+      "title": "Twilight Princess",
+      "era": "Era of Twilight",
+      "placement": "Child Timeline",
+      "description": "Takes place centuries after the Child Ending of Ocarina of Time. Hyrule is threatened by the invasion of the Twilight Realm.",
+      "key_event": "The execution of Ganondorf and his banishment to the Twilight."
+    }
+  ]
+}

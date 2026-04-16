@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Triforce</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1 id="main-title">The Triforce</h1>
+    <p id="sub-title">The Power of the Gods</p>
+  </header>
+
+  <nav class="theme-nav">
+    <ul>
+      <li><a href="index.html">Twilight Princess</a></li>
+      <li><a href="time.html">Ocarina of Time</a></li>
+      <li><a href="skyward.html">Skyward Sword</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="lore.html">Triforce</a></li>
+      <li><a href="Disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </nav>
+
+  <!-- captcha overlay moved into body -->
+  <div id="captcha-overlay" class="full-overlay" style="display:none;">
+    <div class="modal-content">
+      <h2>Prove you are not a Moblin</h2>
+      <p id="captcha-prompt"></p>
+      <input type="number" id="captcha-input" />
+      <button onclick="verifyCaptcha()">Submit</button>
+      <p id="captcha-error" style="color:red;"></p>
+    </div>
+  </div>
+
+  <img src="images/Lunk.png" alt="Link" style="width:300px; display:block; margin: 20px auto;">
+
+  <div class="video-wrap" style="text-align:center; margin:16px 0;">
+    <!-- youtube iframe (embedding may still fail if uploader disallows embeds) -->
+    <iframe
+      width="696"
+      height="391"
+      src="https://www.youtube-nocookie.com/embed/XgjiPJLy0C8"
+      title="Embedded video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+
+    <p>If the embedded player shows an error, watch on YouTube:
+      <a href="https://www.youtube.com/watch?v=XgjiPJLy0C8" target="_blank" rel="noopener">Open on YouTube</a>
+    </p>
+  </div>
+
+  <dl>
+    <dt>Triforce of Power</dt>
+    <dd>Held by Ganondorf.</dd>
+    <dt>Triforce of Wisdom</dt>
+    <dd>Held by Princess Zelda.</dd>
+    <dt>Triforce of Courage</dt>
+    <dd>Held by Link.</dd>
+  </dl>
+
+  <!-- Embedded timeline JSON so fetch is not required when opening file locally -->
+  <script id="timeline-data" type="application/json">
+  {
+    "events": [
+      { "year": "1998", "title": "Ocarina released", "description": "A classic is born." }
+    ]
+  }
+  </script>
+
+  <script src="java4.js"></script>
+
+  <footer>
+    <p>&copy; 2026 Fan Tribute | Images for illustrative purposes only.</p>
+  </footer>
+</body>
+</html>

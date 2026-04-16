@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <header>
+        <h1 id="main-title">Ocarina of Time</h1>
+        <p id="sub-title">The Hero of Time Awakes</p>
+    </header>
+    <link rel="java4.js" href="java4.js">
+    <nav class="theme-nav">
+        <ul>
+            <li><a href="index.html">Twilight Princess</a></li>
+            <li><a href="time.html">Ocarina of Time</a></li>
+            <li><a href="skyward.html">Skyward Sword</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="lore.html">Triforce</a></li>
+            <li><a href="Disclaimer.html">Disclaimer</a></li>
+        </ul>
+    </nav>
+
+<body>
+<div id="fan-popup" class="popup-overlay">
+    <div class="popup-content">
+        <h2>Are you a true Zelda fan?</h2>
+        <p>Choose your destiny to enter the site.</p>
+        <div class="popup-btns">
+            <button onclick="closePopup()">Yes, I am the Hero!</button>
+            <button onclick="window.location.href='https://www.google.com'">No, just passing by.</button>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        <div id="lightbox-overlay" onclick="closeLightbox()">
+    <span class="close-btn">&times;</span>
+    <img id="lightbox-img" src="" alt="Enlarged view">
+</div>
+
+<div class="time-images">
+<img src="images/Navi.SVG" alt="Link" onclick="this.style.width='150px'; this.style.height='150px';" style="cursor: pointer;">
+<img src="images/Young.SVG" alt="Link" onclick="openLightbox(this)" style="cursor: pointer;">
+<img src="images/DJlunk.gif" alt="Link" onclick="openLightbox(this)" style="cursor: pointer;">
+</div>
+        <section>
+            <h2>A Tale Across Generations</h2>
+            <p>Widely considered one of the greatest video games of all time, <em>Ocarina of Time</em> follows Link's quest to stop the Gerudo King, Ganondorf, from obtaining the Triforce. By pulling the Master Sword from its pedestal, Link travels seven years into a future where Hyrule has fallen into ruin.</p>
+        </section>
+
+        <div class="era-split">
+            <div class="era-card young-link">
+                <h3>The Child Era</h3>
+                <p>Explore the Lost Woods, meet the Gorons of Death Mountain, and help the Zora in their quest to save Lord Jabu-Jabu. It is a time of innocence before the storm.</p>
+            </div>
+            <div class="era-card adult-link">
+                <h3>The Adult Era</h3>
+                <p>The world has changed. With the Hookshot and the Master Sword in hand, Link must awaken the Sages to seal Ganon in the Sacred Realm once and for all.</p>
+            </div>
+        </div>
+
+        <section class="ocarina-songs">
+            <h2>Songs of the Ocarina</h2>
+            <p>Music is the key to time, weather, and teleportation. Memorize the melodies:</p>
+            <ul class="song-list">
+                <li class="song-item">Zelda's Lullaby <span class="notes">◀ ▲ ▶ ◀ ▲ ▶</span></li>
+                <li class="song-item">Epona's Song <span class="notes">▲ ◀ ▶ ▲ ◀ ▶</span></li>
+                <li class="song-item">Saria's Song <span class="notes">▼ ▶ ◀ ▼ ▶ ◀</span></li>
+                <li class="song-item">Song of Storms <span class="notes">L R ▲ L R ▲</span></li>
+                <li class="song-item">Song of Time <span class="notes">▶ A ▼ ▶ A ▼</span></li>
+                <li class="song-item">Sun's Song <span class="notes">▶ ▼ ▲ ▶ ▼ ▲</span></li>
+            </ul>
+        </section>
+
+        <section style="margin-top: 40px;">
+            <h2>The Six Sages</h2>
+            <p>To defeat Ganondorf, you must find the medallions from the elemental temples:</p>
+            <ul>
+                <li><strong>Light:</strong> Rauru (Temple of Time)</li>
+                <li><strong>Forest:</strong> Saria (Forest Temple)</li>
+                <li><strong>Fire:</strong> Darunia (Fire Temple)</li>
+                <li><strong>Water:</strong> Ruto (Water Temple)</li>
+                <li><strong>Shadow:</strong> Impa (Shadow Temple)</li>
+                <li><strong>Spirit:</strong> Nabooru (Spirit Temple)</li>
+            </ul>
+        </section>
+
+    </div>
+    <div id="timeline-display"></div>
+    <section>
+    <h2>The Legend Timeline</h2>
+    <script src="java4.js"></script>
+    </div>
+</section>
+    <footer>
+        <p>"The flow of time is always cruel... its speed seems different for each person, but no one can change it." — Sheik</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon_shield.ico"> 
+    <link rel="stylesheet" href="styles.css">
+    <title>Legal Legend | Disclaimer</title>
+</head>
+<body>
+
+    <div id="captcha-overlay" class="full-overlay">
+        <div class="modal-content">
+            <h2>Prove you are not a Moblin</h2>
+            <p id="captcha-prompt"></p>
+            <input type="number" id="captcha-input">
+            <button onclick="verifyCaptcha()">Submit</button>
+            <p id="captcha-error" style="color:red;"></p>
+        </div>
+    </div>
+
+    <div id="cookie-modal" class="full-overlay" style="display:none; background: rgba(0,0,0,0.8);">
+        <div class="modal-content">
+            <h2>Cookies & Potions</h2>
+            <p>This site uses cookies to track your progress through dungeons. Accept?</p>
+            <button onclick="acceptCookies()">I Accept</button>
+        </div>
+    </div>
+
+    <header>
+        <h1 id="disclaimer-title">Legal Legend</h1>
+        <p>The Fine Print of Hyrule</p>
+    </header>
+
+    <nav class="theme-nav">
+        <ul>
+            <li><a href="index.html">Twilight Princess</a></li>
+            <li><a href="time.html">Ocarina of Time</a></li>
+            <li><a href="skyward.html">Skyward Sword</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="lore.html">Triforce</a></li>
+            <li><a href="Disclaimer.html">Disclaimer</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section>
+            <h2>Terms of Service</h2>
+            <p>By entering this fan-tribute site, you agree to the following conditions regarding the Legend of Zelda content displayed here.</p>
+            
+            <h3>Key Definitions</h3>
+            <dl>
+                <dt>The Hero</dt>
+                <dd>The user currently navigating this digital realm.</dd>
+                
+                <dt>The Content</dt>
+                <dd>All images, text, and lore derived from the Zelda franchise.</dd>
+                
+                <dt>The Master Sword</dt>
+                <dd>A digital representation of the blade that seals the darkness.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Intellectual Property</h2>
+            <p>This website is a non-commercial fan project created for educational and illustrative purposes. All rights belong to their respective owners.</p>
+            
+            <h3>Our Priorities</h3>
+            <ol>
+                <li>Respecting original creators and copyright holders.</li>
+                <li>Providing a clean, professional user experience.</li>
+                <li>Sharing the history of Hyrule with the next generation.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Image Formats Used</h2>
+            <p>To ensure a high-quality visual experience, we utilize various image technologies:</p>
+            <ul>
+                <li><strong>PNG:</strong> For transparent character sprites.</li>
+                <li><strong>JPEG:</strong> For high-definition landscape photography.</li>
+                <li><strong>SVG:</strong> For scalable vector icons like the Triforce.</li>
+                <li><strong>GIF:</strong> For animated sequences of the Lost Woods.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Fan Tribute | This site is not affiliated with Nintendo.</p>
+    </footer>
+
+    <script src="java4.js"></script>
+</body>
+</html>

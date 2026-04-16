@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+<header>
+    <h1 id="main-title">Skyward Sword</h1>
+        <p id="sub-title">The Origin of the Legend</p>
+    </header>
+    <link rel="java4.js" href="java4.js">
+    <nav class="theme-nav">
+        <ul>
+            <li><a href="index.html">Twilight Princess</a></li>
+            <li><a href="time.html">Ocarina of Time</a></li>
+            <li><a href="skyward.html">Skyward Sword</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="lore.html">Triforce</a></li>
+            <li><a href="Disclaimer.html">Disclaimer</a></li>
+        </ul>
+    </nav>
+<body>
+<div id="fan-popup" class="popup-overlay">
+    <div class="popup-content">
+        <h2>Are you a true Zelda fan?</h2>
+        <p>Choose your destiny to enter the site.</p>
+        <div class="popup-btns">
+            <button onclick="closePopup()">Yes, I am the Hero!</button>
+            <button onclick="window.location.href='https://www.google.com'">No, just passing by.</button>
+        </div>
+    </div>
+</div>
+
+    <div class="sky">
+       <div id="lightbox-overlay" onclick="closeLightbox()">
+    <span class="close-btn">&times;</span>
+    <img id="lightbox-img" src="" alt="Enlarged view">
+</div>
+
+<img src="images/fi.jpg" alt="Link" onclick="openLightbox(this)" style="cursor: pointer;"> 
+        <section>
+            <h2>Above the Clouds</h2>
+            <p>Step into the boots of the very first Hero. <strong>Skyward Sword</strong> serves as the chronological beginning of the entire Legend of Zelda timeline. From the floating island of Skyloft to the sealed grounds below, witness the forging of the Master Sword and the eternal cycle of the Triforce.</p>
+        </section>
+
+        <section>
+            <h2>Gameplay Pillars</h2>
+            <div class="feature-grid">
+                <div class="card">
+                    <h3>Motion Controls</h3>
+                    <p>Experience 1:1 sword combat. Every swing, parry, and thrust corresponds to your actual movements, making every encounter a puzzle of precision.</p>
+                </div>
+                <div class="card">
+                    <h3>Loftwing Flight</h3>
+                    <p>Whistle for your Crimson Loftwing and soar through the sky. Discover hidden islands and dive through the cloud barrier to the surface world.</p>
+                </div>
+                <div class="card">
+                    <h3>The Goddess Sword</h3>
+                    <p>Guide Link as he upgrades his blade through the Sacred Flames, eventually transforming it into the iconic Master Sword.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stat-bar">
+            <h3><div class="stamina-circle"></div> Adventure Tip</h3>
+            <p>Keep an eye on your <strong>Stamina Wheel</strong>! Whether you're sprinting up a ramp in the Lanayru Desert or scaling a wall in the Faron Woods, managing your energy is the key to survival.</p>
+        </section>
+
+        <section>
+            <h2>The Surface Regions</h2>
+            <ul>
+                <li><strong>Faron Woods:</strong> Home to the Kikwi and the ancient Sealed Grounds.</li>
+                <li><strong>Eldin Volcano:</strong> A fiery landscape inhabited by the treasure-hunting Mogma.</li>
+                <li><strong>Lanayru Desert:</strong> Use Timeshift Stones to turn back the clock and reveal a lush, technological past.</li>
+            </ul>
+        </section>
+
+    </div>
+    <div id="timeline-display"></div>
+    <section>
+    <h2>The Legend Timeline</h2>
+    <div id="timeline-display">
+        <p>Loading timeline...</p>
+    </div>
+</section>
+
+<script src="java4.js"></script>
+    <footer>
+        <p>May the Goddess smile upon you.</p>
+    </footer>
+
+</body>
+</html>

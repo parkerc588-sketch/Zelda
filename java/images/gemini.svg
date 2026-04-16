@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2001/svg" viewBox="0 0 200 150">
+    <defs>
+        <radialGradient id="naviCoreGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" style="stop-color: #f7fbff; stop-opacity: 1;" />
+            <stop offset="100%" style="stop-color: #a8dfff; stop-opacity: 1;" />
+        </radialGradient>
+    </defs>
+
+    <circle cx="100" cy="75" r="45" fill="#a8dfff" opacity="0.3" />
+    <circle cx="100" cy="75" r="35" fill="#a8dfff" opacity="0.6" />
+
+    <path d="M100 70 C70 10, 40 40, 50 60 Q100 75 100 75 Z" fill="#f7fbff" opacity="0.9" stroke="#ffffff" stroke-width="1.5" />
+    <path d="M100 70 C130 10, 160 40, 150 60 Q100 75 100 75 Z" fill="#f7fbff" opacity="0.9" stroke="#ffffff" stroke-width="1.5" />
+
+    <path d="M100 80 C80 90, 60 100, 75 115 Q100 85 100 85 Z" fill="#f7fbff" opacity="0.7" stroke="#ffffff" stroke-width="1" />
+    <path d="M100 80 C120 90, 140 100, 125 115 Q100 85 100 85 Z" fill="#f7fbff" opacity="0.7" stroke="#ffffff" stroke-width="1" />
+
+    <circle cx="100" cy="75" r="22" fill="url(#naviCoreGlow)" stroke="#ffffff" stroke-width="2" />
+</svg>
