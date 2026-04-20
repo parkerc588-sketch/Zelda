@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ocarina of Time</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
     <header>
         <h1 id="main-title">Ocarina of Time</h1>
         <p id="sub-title">The Hero of Time Awakes</p>
     </header>
-    <link rel="java4.js" href="java4.js">
+
     <nav class="theme-nav">
         <ul>
             <li><a href="index.html">Twilight Princess</a></li>
@@ -20,29 +23,29 @@
         </ul>
     </nav>
 
-<body>
-<div id="fan-popup" class="popup-overlay">
-    <div class="popup-content">
-        <h2>Are you a true Zelda fan?</h2>
-        <p>Choose your destiny to enter the site.</p>
-        <div class="popup-btns">
-            <button onclick="closePopup()">Yes, I am the Hero!</button>
-            <button onclick="window.location.href='https://www.google.com'">No, just passing by.</button>
+    <div id="fan-popup" class="popup-overlay">
+        <div class="popup-content">
+            <h2>Are you a true Zelda fan?</h2>
+            <p>Choose your destiny to enter the site.</p>
+            <div class="popup-btns">
+                <button onclick="closePopup()">Yes, I am the Hero!</button>
+                <button onclick="window.location.href='https://www.google.com'">No, just passing by.</button>
+            </div>
         </div>
     </div>
-</div>
 
-    <div class="container">
+    <main class="container">
         <div id="lightbox-overlay" onclick="closeLightbox()">
-    <span class="close-btn">&times;</span>
-    <img id="lightbox-img" src="" alt="Enlarged view">
-</div>
+            <span class="close-btn">&times;</span>
+            <img id="lightbox-img" src="" alt="Enlarged view">
+        </div>
 
-<div class="time-images">
-<img src="images/Navi.SVG" alt="Link" onclick="this.style.width='150px'; this.style.height='150px';" style="cursor: pointer;">
-<img src="images/Young.SVG" alt="Link" onclick="openLightbox(this)" style="cursor: pointer;">
-<img src="images/DJlunk.gif" alt="Link" onclick="openLightbox(this)" style="cursor: pointer;">
-</div>
+        <div class="time-images">
+            <img src="images/Navi.SVG" alt="Navi" style="cursor: pointer;">
+            <img src="images/Young.SVG" alt="Young Link" onclick="openLightbox(this)" style="cursor: pointer;">
+            <img src="images/DJlunk.gif" alt="Link GIF" onclick="openLightbox(this)" style="cursor: pointer;">
+        </div>
+
         <section>
             <h2>A Tale Across Generations</h2>
             <p>Widely considered one of the greatest video games of all time, <em>Ocarina of Time</em> follows Link's quest to stop the Gerudo King, Ganondorf, from obtaining the Triforce. By pulling the Master Sword from its pedestal, Link travels seven years into a future where Hyrule has fallen into ruin.</p>
@@ -72,7 +75,7 @@
             </ul>
         </section>
 
-        <section style="margin-top: 40px;">
+        <section style="margin-top:40px;">
             <h2>The Six Sages</h2>
             <p>To defeat Ganondorf, you must find the medallions from the elemental temples:</p>
             <ul>
@@ -85,16 +88,43 @@
             </ul>
         </section>
 
-    </div>
-    <div id="timeline-display"></div>
-    <section>
-    <h2>The Legend Timeline</h2>
+        <section>
+            <h2>The Legend Timeline</h2>
+            <div id="timeline-display">
+                <p>Loading timeline...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Embedded JSON fallback so loadTimeline won't need fetch when opened via file:// -->
+    <script id="timeline-data" type="application/json">
+{
+  "zelda_timeline": [
+    {
+      "id": "ocarina",
+      "title": "Ocarina of Time",
+      "era": "Era of the Hero of Time",
+      "placement": "Chronological Pivot",
+      "description": "Link pulls the Master Sword and travels seven years into the future.",
+      "key_event": "Master Sword / Time Travel"
+    },
+    {
+      "id": "twilight",
+      "title": "Twilight Princess",
+      "era": "Era of Twilight",
+      "placement": "Child Timeline",
+      "description": "Takes place centuries after the Child Ending of Ocarina of Time.",
+      "key_event": "The rise of the Twilight"
+    }
+  ]
+}
+    </script>
+
+    <!-- load site JS (must be a <script> so it runs) -->
     <script src="java4.js"></script>
-    </div>
-</section>
+
     <footer>
         <p>"The flow of time is always cruel... its speed seems different for each person, but no one can change it." — Sheik</p>
     </footer>
-
 </body>
 </html>

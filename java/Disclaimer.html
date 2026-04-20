@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="favicon_shield.ico"> 
     <link rel="stylesheet" href="styles.css">
-    <title>Legal Legend | Disclaimer</title>
+    <title>Legal Legend | Disclaimer/Feedback</title>
 </head>
 <body>
 
@@ -71,9 +71,10 @@
                 <li>Providing a clean, professional user experience.</li>
                 <li>Sharing the history of Hyrule with the next generation.</li>
             </ol>
+=
         </section>
 
-        <section>
+        =   <section>
             <h2>Image Formats Used</h2>
             <p>To ensure a high-quality visual experience, we utilize various image technologies:</p>
             <ul>
@@ -84,6 +85,56 @@
             </ul>
         </section>
     </div>
+        <section id="user-form" style="margin-top:40px;">
+            <h2>Give Feedback</h2>
+            <form id="site-form">
+                <label>
+                    Name :
+                    <input type="text" name="name" id="form-name" required />
+                </label>
+
+                <label>
+                    Favorite Era:
+                    <select name="era" id="form-era">
+                        <option value="child">Child Era</option>
+                        <option value="adult">Adult Era</option>
+                        <option value="both">Both</option>
+                    </select>
+                </label>
+
+                <fieldset>
+                    <legend>Subscribe?</legend>
+                    <label><input type="checkbox" name="subscribe" id="form-subscribe" /> Yes, send me updates</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Rate this site:</legend>
+                    <label><input type="radio" name="rating" value="1" required /> 1</label>
+                    <label><input type="radio" name="rating" value="2" /> 2</label>
+                    <label><input type="radio" name="rating" value="3" /> 3</label>
+                    <label><input type="radio" name="rating" value="4" /> 4</label>
+                    <label><input type="radio" name="rating" value="5" /> 5</label>
+                </fieldset>
+
+                <label>
+                    Message:
+                    <textarea name="message" id="form-message" rows="4" cols="40" placeholder="Write a short message..."></textarea>
+                </label>
+
+                <div style="margin-top:8px;">
+                    <button type="submit">Submit</button>
+                    <button type="button" id="form-clear">Clear</button>
+                </div>
+            </form>
+
+            <h3>Submissions</h3>
+            <div id="form-results">
+                <p>No submissions yet.</p>
+            </div>
+        </section>
+
+
+     
 
     <footer>
         <p>&copy; 2026 Fan Tribute | This site is not affiliated with Nintendo.</p>

@@ -1,121 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="java4.js" href="java4.js">
-    <header>
-        <h1 id="main-title">Twilight Princess</h1>
-        <p id="sub-title">A Shadow Falls Over Hyrule</p>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="main-title">Twilight Princess</h1>
+    <p id="sub-title">A Shadow Falls Over Hyrule</p>
+  </header>
   <div id="captcha-overlay" class="full-overlay">
     <div class="modal-content">
-        <h2>Prove you are not a Moblin</h2>
-        <p id="captcha-prompt"></p>
-        <input type="number" id="captcha-input">
-        <button onclick="verifyCaptcha()">Submit</button>
-        <p id="captcha-error" style="color:red;"></p>
+      <h2>Prove you are not a Moblin</h2>
+      <p id="captcha-prompt"></p>
+      <input type="number" id="captcha-input">
+      <button onclick="verifyCaptcha()">Submit</button>
+      <p id="captcha-error" style="color:red;"></p>
     </div>
-</div>
+  </div>
 
-<div id="cookie-modal" class="full-overlay" style="display:none; background: rgba(0,0,0,0.8);">
+  <div id="cookie-modal" class="full-overlay" style="display:none; background: rgba(0,0,0,0.8);">
     <div class="modal-content">
-        <h2>Cookies & Potions</h2>
-        <p>This site uses cookies to track your progress through dungeons. Accept?</p>
-        <button onclick="acceptCookies()">I Accept</button>
+      <h2>Cookies & Potions</h2>
+      <p>This site uses cookies to track your progress through dungeons. Accept?</p>
+      <button onclick="acceptCookies()">I Accept</button>
     </div>
-</div>
-    <nav class="theme-nav">
-        <ul>
-            <li><a href="index.html">Twilight Princess</a></li>
-            <li><a href="time.html">Ocarina of Time</a></li>
-            <li><a href="skyward.html">Skyward Sword</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="lore.html">Triforce</a></li>
-            <li><a href="Disclaimer.html">Disclaimer</a></li>
-        </ul>
-    </nav>
- 
-<body>
-<div id="fan-popup" class="popup-overlay">
+  </div>
+  <nav class="theme-nav">
+    <ul>
+      <li><a href="index.html">Twilight Princess</a></li>
+      <li><a href="time.html">Ocarina of Time</a></li>
+      <li><a href="skyward.html">Skyward Sword</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="lore.html">Triforce</a></li>
+      <li><a href="Disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </nav>
+
+  <div id="fan-popup" class="popup-overlay">
     <div class="popup-content">
-        <h2>Are you a true Zelda fan?</h2>
-        <p>Choose your destiny to enter the site.</p>
-        <div class="popup-btns">
-            <button onclick="closePopup()">Yes, I am the Hero!</button>
-            <button onclick="window.location.href='https://www.google.com'">No, just passing by.</button>
+      <h2>Are you a true Zelda fan?</h2>
+      <p>Choose your destiny to enter the site.</p>
+      <div class="popup-btns">
+        <button onclick="closePopup()">Yes, I am the Hero!</button>
+        <button onclick="window.location.href='https://www.google.com'">No, just passing by.</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div id="lightbox-overlay" onclick="closeLightbox()">
+      <span class="close-btn">&times;</span>
+      <img id="lightbox-img" src="" alt="Enlarged view">
+    </div>
+
+    <img src="images/midna.jpg" alt="Link" onclick="openLightbox(this)" style="cursor: pointer;">
+    <img src="images/wolf.png" alt="Link" onclick="openLightbox(this)" style="cursor: pointer;">
+    <section id="about">
+      <h2>The Legend Returns</h2>
+      <p>Released in 2006, <strong>Twilight Princess</strong> took the Zelda series into a darker, more realistic direction.
+        Set centuries after <em>Ocarina of Time</em>, players follow Link, a young farmhand from Ordon Village, who must
+        prevent Hyrule from being engulfed by a corrupted parallel dimension known as the Twilight Realm.</p>
+    </section>
+
+    <section id="mechanics">
+      <h2>Key Features</h2>
+      <div class="grid">
+        <div class="feature-box">
+          <h3>Wolf Link</h3>
+          <p>When entering the Twilight, Link transforms into a divine beast. Use enhanced senses to track scents and fight
+            alongside the mysterious Midna.</p>
         </div>
+        <div class="feature-box">
+          <h3>Hidden Skills</h3>
+          <p>Learn advanced sword techniques like the Ending Blow and Helm Splitter from the ghostly Hero's Shade.</p>
+        </div>
+        <div class="feature-box">
+          <h3>The Twilight Realm</h3>
+          <p>Explore a world frozen in shadow, where you must restore light to the Provinces of Hyrule.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Classic Dungeons</h3>
+          <p>Navigate some of the series' most acclaimed temples, from the Arbiter's Grounds to the Snowpeak Ruins.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="characters">
+      <h2>Major Characters</h2>
+      <ol>
+        <li><strong>Link:</strong> The chosen hero bearing the Triforce of Courage.</li>
+        <li><strong>Midna:</strong> The Twilight Spark—a mischievous guide with a secret past.</li>
+        <li><strong>Zant:</strong> The Usurper King who brought shadow to the world of light.</li>
+        <li><strong>Princess Zelda:</strong> The sovereign of Hyrule who sacrificed her freedom to save her people.</li>
+      </ol>
+    </section>
+   <h2>The Legend Timeline</h2>
+  </div>
+  <div id="timeline-display"></div>
+  <section>
+ 
     </div>
-</div>
+  </section>
+  <dl>
+    <dt>Triforce of Power</dt>
+    <dd>Held by Ganondorf.</dd>
+    <dt>Triforce of Wisdom</dt>
+    <dd>Held by Princess Zelda.</dd>
+    <dt>Triforce of Courage</dt>
+    <dd>Held by Link.</dd>
+  </dl>
 
-
-    <div class="container">
-     <div id="lightbox-overlay" onclick="closeLightbox()">
-    <span class="close-btn">&times;</span>
-    <img id="lightbox-img" src="" alt="Enlarged view">
-</div>
-
-<img src="images/midna.jpg" alt="Link" onclick="openLightbox(this)" style="cursor: pointer;"> 
-<img src="images/wolf.png" alt="Link" onclick="openLightbox(this)" style="cursor: pointer;">  
-        <section id="about">
-            <h2>The Legend Returns</h2>
-            <p>Released in 2006, <strong>Twilight Princess</strong> took the Zelda series into a darker, more realistic direction. Set centuries after <em>Ocarina of Time</em>, players follow Link, a young farmhand from Ordon Village, who must prevent Hyrule from being engulfed by a corrupted parallel dimension known as the Twilight Realm.</p>
-        </section>
-
-        <section id="mechanics">
-            <h2>Key Features</h2>
-            <div class="grid">
-                <div class="feature-box">
-                    <h3>Wolf Link</h3>
-                    <p>When entering the Twilight, Link transforms into a divine beast. Use enhanced senses to track scents and fight alongside the mysterious Midna.</p>
-                </div>
-                <div class="feature-box">
-                    <h3>Hidden Skills</h3>
-                    <p>Learn advanced sword techniques like the Ending Blow and Helm Splitter from the ghostly Hero's Shade.</p>
-                </div>
-                <div class="feature-box">
-                    <h3>The Twilight Realm</h3>
-                    <p>Explore a world frozen in shadow, where you must restore light to the Provinces of Hyrule.</p>
-                </div>
-                <div class="feature-box">
-                    <h3>Classic Dungeons</h3>
-                    <p>Navigate some of the series' most acclaimed temples, from the Arbiter's Grounds to the Snowpeak Ruins.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="characters">
-            <h2>Major Characters</h2>
-            <ol>
-                <li><strong>Link:</strong> The chosen hero bearing the Triforce of Courage.</li>
-                <li><strong>Midna:</strong> The Twilight Spark—a mischievous guide with a secret past.</li>
-                <li><strong>Zant:</strong> The Usurper King who brought shadow to the world of light.</li>
-                <li><strong>Princess Zelda:</strong> The sovereign of Hyrule who sacrificed her freedom to save her people.</li>
-            </ol>
-        </section>
-
-    </div>
-<div id="timeline-display"></div>
-<section>
-    <h2>The Legend Timeline</h2>
-    <div id="timeline-display">
-        <p>Loading timeline...</p>
-    </div>
-</section>
-<dl>
-  <dt>Triforce of Power</dt>
-  <dd>Held by Ganondorf.</dd>
-  <dt>Triforce of Wisdom</dt>
-  <dd>Held by Princess Zelda.</dd>
-  <dt>Triforce of Courage</dt>
-  <dd>Held by Link.</dd>
-</dl>
-
-<script src="java4.js"></script>
-    <footer>
-        <p>&copy; 2026 Fan Tribute | Images for illustrative purposes only.</p>
-    </footer>
+  <script src="java4.js"></script>
+  <footer>
+    <p>&copy; 2026 Fan Tribute | Images for illustrative purposes only.</p>
+  </footer>
 
 </body>
+
 </html>
